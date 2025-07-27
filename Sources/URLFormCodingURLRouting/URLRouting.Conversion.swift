@@ -49,7 +49,6 @@ extension URLRouting.Conversion {
     ///     Body(.form(LoginRequest.self))
     /// }
     /// ```
-    @inlinable
     public static func form<Value>(
         _ type: Value.Type,
         decoder: Form.Decoder = .init(),
@@ -80,7 +79,6 @@ extension URLRouting.Conversion {
     /// let chainedConversion = Conversion<Data, Data>.identity
     ///     .form(UserProfile.self)
     /// ```
-    @inlinable
     public func form<Value>(
         _ type: Value.Type,
         decoder: Form.Decoder = .init(),

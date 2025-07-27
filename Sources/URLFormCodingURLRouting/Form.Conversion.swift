@@ -122,7 +122,6 @@ extension Form {
         ///     encoder: encoder
         /// )
         /// ```
-        @inlinable
         public init(
             _ type: Value.Type,
             decoder: Form.Decoder = .init(),
@@ -163,7 +162,6 @@ extension Form.Conversion: URLRouting.Conversion {
     ///     print("Form decoding failed: \(error)")
     /// }
     /// ```
-    @inlinable
     public func apply(_ input: Foundation.Data) throws -> Value {
         try decoder.decode(Value.self, from: input)
     }
@@ -194,7 +192,6 @@ extension Form.Conversion: URLRouting.Conversion {
     ///     print("Form encoding failed: \(error)")
     /// }
     /// ```
-    @inlinable
     public func unapply(_ output: Value) throws -> Foundation.Data {
         try encoder.encode(output)
     }
