@@ -1,5 +1,5 @@
 {
-  "originHash" : "4cbfccbee74c17f0154530a32c4a281fcbeba97a857e0570d0f40540dcc10287",
+  "originHash" : "bd0dde875ee5649612d68f0a2bb97ce5475a390691e2885415f2f2d2d1a23c6f",
   "pins" : [
     {
       "identity" : "combine-schedulers",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "5928286acce13def418ec36d05a001a9641086f2",
         "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "pointfree-url-form-coding",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/coenttb/pointfree-url-form-coding.git",
+      "state" : {
+        "revision" : "20c06173a90ff7a90e20d9f216b99632b68031ca",
+        "version" : "0.0.1"
       }
     },
     {
@@ -78,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/coenttb/swift-url-form-coding",
       "state" : {
-        "revision" : "862a7c05f18866fecd44d16b95c8a36d22ca8645",
-        "version" : "0.0.1"
+        "revision" : "589ac3b05431a6aaf7d3dd74fe1004aa1110b93f",
+        "version" : "0.0.2"
       }
     },
     {

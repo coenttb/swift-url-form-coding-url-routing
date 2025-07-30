@@ -27,22 +27,22 @@ let package = Package(
       .iOS(.v13),
       .macOS(.v10_15),
       .tvOS(.v13),
-      .watchOS(.v6),
+      .watchOS(.v6)
     ],
     products: [
-        .library(name: .urlFormCodingURLRouting, targets: [.urlFormCodingURLRouting]),
+        .library(name: .urlFormCodingURLRouting, targets: [.urlFormCodingURLRouting])
     ],
     dependencies: [
         .package(url: "https://github.com/coenttb/swift-url-form-coding", from: "0.0.1"),
         .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.1.5"),
-        .package(url: "https://github.com/pointfreeco/swift-url-routing", from: "0.6.0"),
+        .package(url: "https://github.com/pointfreeco/swift-url-routing", from: "0.6.0")
     ],
     targets: [
         .target(
             name: .urlFormCodingURLRouting,
             dependencies: [
                 .urlRouting,
-                .urlFormCoding,
+                .urlFormCoding
             ]
         ),
         .testTarget(
@@ -51,7 +51,7 @@ let package = Package(
                 .urlFormCodingURLRouting,
                 .dependenciesTestSupport
             ]
-        ),
+        )
     ],
     swiftLanguageModes: [.v5]
 )

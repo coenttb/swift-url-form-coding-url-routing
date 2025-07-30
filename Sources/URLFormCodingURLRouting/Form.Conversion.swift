@@ -7,9 +7,8 @@
 
 import Foundation
 import Parsing
-import URLRouting
 import URLFormCoding
-
+import URLRouting
 
 /// A conversion that handles URL form data encoding and decoding for URLRouting.
 ///
@@ -83,10 +82,10 @@ import URLFormCoding
 /// - Note: The encoder and decoder can be configured independently with different strategies.
 /// - Important: Ensure encoder and decoder strategies are compatible for round-trip operations.
 extension Form {
-    public struct Conversion<Value: Codable>  {
+    public struct Conversion<Value: Codable> {
         /// The URL form decoder used for parsing form data.
         public let decoder: Form.Decoder
-        
+
         /// The URL form encoder used for generating form data.
         public let encoder: Form.Encoder
 
@@ -132,8 +131,6 @@ extension Form {
         }
     }
 }
-
-
 
 extension Form.Conversion: URLRouting.Conversion {
     /// Converts URL form data to a Swift value.
